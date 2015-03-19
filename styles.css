@@ -1,0 +1,111 @@
+* {
+    font-family: sans-serif, arial;
+}/*Set the default font to all text in the html page.*/
+
+body {
+    padding: 0px; /*Set the blank space inside the content box.*/
+    margin: 0px; /*Set tht blank space outside the content box*/
+    min-width: 960px;
+}/*Set the style of body.*/
+
+a, a:visited {
+    text-decoration: none;
+    color: #E19807;
+}
+
+a.active {
+    text-decoration: underline;
+}/*nderline the selected content.*/
+
+h1, h2, h3, h4, h5, h6 {
+    color: #E19807
+}
+
+#notes-list {
+    width: 310px; 
+    float: left; /*Floating on the left.*/
+    border-right: 1px solid lightgrey; 
+    height: 100%; 
+    background-image: url("images/ListBg.png"); /*Set background image.*/
+    /*The background image will be repeated both vertically and horizontally.*/
+    background-repeat: repeat;
+    /*Overflow specifies what to do if the content of the element*/
+    /*exceeds the size of the element's box.*/
+    overflow: none;
+}/*Set the default note-list style*/
+
+.notes-list-item-title {
+    float: left; 
+    width: 150px;
+}
+
+.notes-list-item-timestamp {
+    float: right; 
+    color: #AE9F72;
+    width: 80px;
+}
+
+#notepad {
+    /**/
+    background-image: url('images/PadBg.png'); 
+    background-repeat: repeat; 
+    height: 100%;
+}
+
+.notes-list-item {
+    width: 300px; 
+    height: 30px; 
+    border-bottom: 1px dashed #EDE1B3; 
+    padding: 5px; 
+}
+
+#timestamp {
+    font-weight: normal; 
+    color: grey;
+    height: 10%;
+}
+
+#tinymce-holder {
+    border: none;  
+    background-image: url('images/PadBg.png'); 
+    background-repeat: repeat;
+    font-size: 18px;
+    height: auto;
+    width: auto;
+    margin: 20px;
+    border: 1px grey solid;
+    position: fixed;
+    left: 300px;
+
+}
+
+.left {
+
+    float: left;
+}
+
+/*#tinymce-holder {
+    Specifies the position of the box.
+    position: fixed;
+    left: 300px;
+    width: 850px;
+    height: 200px;
+}*/
+
+
+#areaComment {
+   float: left;
+}
+
+.right {
+    float: right;
+}
+
+.header {
+    height: 25px;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #E19807;
+    border-bottom: 1px solid #EDE1B3;
+    padding: 10px;
+}
