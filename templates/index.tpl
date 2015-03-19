@@ -44,13 +44,13 @@
                     <div id="tinymce-holder">
                         <form action="index.php" method="POST" id="updateForm">
                             <div id="areaContent">
-                                <textarea rows="27" cols="70" id="content" name="content">{$note.content}</textarea>
+                                <textarea rows="27" cols="95" id="content" name="content">{$note.content}</textarea>
                                 <input type="hidden" name="action" value="update"/>
                             </div>
                         </form>
                         <form action="index.php?action=reminder" method="post" id="updateComment">
                             <div id="areaComment">
-                                <textarea rows="3" cols="70" name="reminder" id="comment">{$note.comment}</textarea>
+                                <textarea rows="3" cols="95" name="reminder" id="comment">{$note.reminder}</textarea>
                                 <br/><input type="submit" name="submit" value="Add Reminder:"/>
                             </div>
                         </form>   

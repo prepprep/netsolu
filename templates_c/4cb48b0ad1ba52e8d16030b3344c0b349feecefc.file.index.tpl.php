@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-19 19:37:50
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-19 21:46:06
          compiled from ".\templates\index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:16823550776c40b88c9-76753386%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '4cb48b0ad1ba52e8d16030b3344c0b349feecefc' => 
     array (
       0 => '.\\templates\\index.tpl',
-      1 => 1426790265,
+      1 => 1426797964,
       2 => 'file',
     ),
   ),
@@ -91,14 +91,14 @@ $_smarty_tpl->tpl_vars['note']->_loop = true;
                     <div id="tinymce-holder">
                         <form action="index.php" method="POST" id="updateForm">
                             <div id="areaContent">
-                                <textarea rows="27" cols="70" id="content" name="content"><?php echo $_smarty_tpl->tpl_vars['note']->value['content'];?>
+                                <textarea rows="27" cols="95" id="content" name="content"><?php echo $_smarty_tpl->tpl_vars['note']->value['content'];?>
 </textarea>
                                 <input type="hidden" name="action" value="update"/>
                             </div>
                         </form>
                         <form action="index.php?action=reminder" method="post" id="updateComment">
                             <div id="areaComment">
-                                <textarea rows="3" cols="70" name="reminder" id="comment"><?php echo $_smarty_tpl->tpl_vars['note']->value['comment'];?>
+                                <textarea rows="3" cols="95" name="reminder" id="comment"><?php echo $_smarty_tpl->tpl_vars['note']->value['reminder'];?>
 </textarea>
                                 <br/><input type="submit" name="submit" value="Add Reminder:"/>
                             </div>
