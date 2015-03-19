@@ -183,17 +183,17 @@ function updateNote($id, $newContent) {
     }
 }
 
-function addReminder($id, $newComment) {
+function addReminder($id, $reminder) {
 
     try {
         $connection = new PDO(db_dsn, db_username, db_passwd);
         //Update the content of the target id.
         $query = $connection->prepare("UPDATE notes
-                                       SET comment = :comment,
+                                       SET reminder = :reminder,
                                            last_modified = CURRENT_TIMESTAMP
                                        WHERE id = :id");
         $query->bindParam(':id', $id, PDO::PARAM_INT);
-        $query->bindParam(':comment', $newComment, PDO::PARAM_STR);
+        $query->bindParam(':reminder', $reminder, PDO::PARAM_STR);
         $query->execute();
     } catch (PDOException $e) {
         echo $e->getMessage();
